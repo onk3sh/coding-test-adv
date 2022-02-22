@@ -65,16 +65,12 @@ These endpoints should be protected, only allowing requests accompanied by a val
 - If you are having trouble setting up the docker environment, feel free to use the scripts to load a local database and develop locally. 
 
 ### Submission
-There are several ways to submit your completed assignment:
 
-#### PR Method (Preferred)
 - Create a PR for `your new branch` -> `master` **in your own repository**
 - Do not PR in this repository
 - Email hugh.soong@rbc.com with a link to the PR
+- If you require other accomodations, please let us know
 
-#### Zip Method
-- Zip your completed code
-- Email it to hugh.soong@rbc.com
 
 ## Photo Lists
 
