@@ -6,9 +6,12 @@ const router = express.Router();
 
 /* Get an auth token */
 router.get('/', async (req, res) => {
-  const token = AuthService.getToken();
-
-  res.send(token);
+  try {
+    const token = AuthService.getToken();
+    return res.send(token);
+  } catch (error) {
+    return res.sendStatus(500);
+  }
 });
 
 module.exports = router;

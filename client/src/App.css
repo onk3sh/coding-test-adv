@@ -1,38 +1,121 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
+  padding-top: 10px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.active-button {
+  background-color: purple;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  padding: 10px 32px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  min-width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
+.inactive-button {
+  background-color: white;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  padding: 10px 32px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.carousel {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* Below are from w3 school https://www.w3schools.com/howto/howto_css_arrows.asp*/
+.arrow {
+  border: solid white;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.img-thumb {
+  width: 600px;
+  height: 350px;
+}
+
+/* Loading Spinner from https://loading.io/css/*/
+
+.lds-ring {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-left: 100%;
+  padding-top: 10%;
+  z-index: 9999;
+  background-color: rgba(50, 55, 65, 0.7);
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 8px solid #fff;
+  margin: 8px;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }

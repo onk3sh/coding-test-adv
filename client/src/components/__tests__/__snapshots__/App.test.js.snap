@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test App Component should render all child component: 
+    <div class="app"><header class="app-header">Render CategoriesRender Carousel</header></div>
+     1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <header
+      class="app-header"
+    >
+      Render Categories
+      Render Carousel
+    </header>
+  </div>
+</div>
+`;
